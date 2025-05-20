@@ -1,5 +1,6 @@
 <template>
   <h3 class="color-500">Services</h3>
+
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div v-for="service in services" class="col">
       <div class="card" :class="service.bg">

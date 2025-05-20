@@ -5,10 +5,14 @@
   <main>
     <RouterView />
   </main>
+  <footer>
+    <BottomFooter />
+  </footer>
 </template>
 
 <script setup>
-import NavBar from '@/components/commons/nav/NavBar.vue';
+import NavBar from '@/components/commons/header/NavBar.vue';
+import BottomFooter from '@/components/commons/footer/BottomFooter.vue';
 import { RouterView } from 'vue-router';
 
 </script>
