@@ -1,9 +1,15 @@
+<template>
+  <HomeImage />
+
+  <div class="container">
+    <HomeServices />
+  </div>
+</template>
+
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import HomeImage from '@/components/home/HomeImage.vue';
+import HomeServices from '@/components/home/HomeServices.vue';
+
 </script>
 
-<template>
-  <main>
-    <TheWelcome />
-  </main>
-</template>
+<style scoped></style>

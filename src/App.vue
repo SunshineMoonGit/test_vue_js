@@ -1,85 +1,94 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
+    <NavBar />
   </header>
-
-  <RouterView />
+  <main>
+    <RouterView />
+  </main>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+<script setup>
+import NavBar from '@/components/commons/nav/NavBar.vue';
+import { RouterView } from 'vue-router';
+
+</script>
+
+<style lang="scss" scoped></style>
+
+<style lang="scss">
+.color-100 {
+  color: $color-primary-100;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.color-200 {
+  color: $color-primary-200;
 }
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+.color-300 {
+  color: $color-primary-300;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
+.color-400 {
+  color: $color-primary-400;
 }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+.color-500 {
+  color: $color-primary-500;
 }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+.color-600 {
+  color: $color-primary-600;
 }
 
-nav a:first-of-type {
-  border: 0;
+.color-700 {
+  color: $color-primary-700;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+.color-800 {
+  color: $color-primary-800;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+.color-900 {
+  color: $color-primary-900;
+}
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.bg-100 {
+  background-color: $color-primary-100;
+}
 
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
+.bg-200 {
+  background-color: $color-primary-200;
+}
 
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+.bg-300 {
+  background-color: $color-primary-300;
+}
+
+.bg-400 {
+  background-color: $color-primary-400;
+}
+
+.bg-500 {
+  background-color: $color-primary-500;
+}
+
+.bg-600 {
+  background-color: $color-primary-600;
+}
+
+.bg-700 {
+  background-color: $color-primary-700;
+}
+
+.bg-800 {
+  background-color: $color-primary-800;
+}
+
+.bg-900 {
+  background-color: $color-primary-900;
+}
+
+a {
+  text-decoration: none
 }
 </style>
