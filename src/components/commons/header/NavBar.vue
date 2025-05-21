@@ -3,7 +3,7 @@
     <div class="container justify-content-between align-items-center">
 
       <!-- 왼쪽 -->
-      <a class="navbar-brand fw-bold color-500 me-4" href="#">MoneyUp</a>
+      <a class="navbar-brand fw-bold color-500 me-4" href="/">MoneyUp</a>
 
       <!-- 가운데 메뉴 -->
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -18,14 +18,24 @@
           <i class="bi bi-globe"></i>
           KO-KR
         </span>
-        <button class="btn btn-sm rounded-pill bg-500 text-white px-3 py-2">가입하기</button>
+
+        <button @click="toSignUpPage" class="btn btn-sm rounded-pill bg-500 text-white px-3 py-2">가입하기</button>
+
       </div>
     </div>
   </nav>
 </template>
 
 <script setup>
+
+import { useRouter } from 'vue-router';
 import NavBarItem from './NavBarItem.vue';
+
+
+const router = useRouter();
+const toSignUpPage = () => {
+  router.push('/signup')
+}
 
 const menus = [
   { name: '상품' },
@@ -59,5 +69,9 @@ const menus = [
       border-bottom: 2px solid $color-primary-400;
     }
   }
+}
+
+.btn:hover {
+  background-color: $color-primary-500;
 }
 </style>

@@ -1,7 +1,8 @@
 import HomeView from '@/views/HomeView.vue'
-import ProfileView from '@/views/ProfileView.vue'
-import SignInView from '@/views/SignInView.vue'
-import SignUpView from '@/views/SignUpView.vue'
+import ProfileView from '@/views/account/ProfileView.vue'
+import SignInView from '@/views/account/SignInView.vue'
+import SignUpView from '@/views/account/SignUpView.vue'
+import MapView from '@/views/map/MapView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -13,7 +14,14 @@ const router = createRouter({
       component: HomeView,
     },
 
-    // accounts
+    // map
+    {
+      path: '/map',
+      name: 'map',
+      component: MapView,
+    },
+
+    // account
     {
       path: '/signin',
       name: 'signin',

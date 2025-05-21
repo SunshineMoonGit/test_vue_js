@@ -1,5 +1,6 @@
 <template>
   <div id="carouselExampleSlidesOnly" class="my-5 carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
     <!-- 🔘 인디케이터 버튼 -->
     <div class="carousel-indicators">
       <button v-for="(image, idx) in images" :key="'indicator-' + idx" type="button"

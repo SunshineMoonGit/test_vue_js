@@ -13,7 +13,10 @@
 <script setup>
 import NavBar from '@/components/commons/header/NavBar.vue';
 import BottomFooter from '@/components/commons/footer/BottomFooter.vue';
-import { RouterView } from 'vue-router';
+import { RouterView, useRoute } from 'vue-router';
+
+
+
 
 </script>
 
